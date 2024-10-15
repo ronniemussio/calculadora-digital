@@ -1,0 +1,67 @@
+h1 {
+    font-family: 'Arial', sans-serif; /* Fonte */
+    font-size: 36px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: #0b0f13; /* Cor do texto */
+    text-align: center; /* Alinhamento */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra do texto */
+    margin: 20px 0; /* Margem em cima e embaixo */
+    padding: 10px; /* Preenchimento interno */
+    border: 2px solid #181d23; /* Borda ao redor */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(68, 69, 100);
+    box-shadow: 0 0 10px rgba(153, 99, 99, 0.1);
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #d0d0d0;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.equals:hover {
+    background-color: #45a049;
+}
